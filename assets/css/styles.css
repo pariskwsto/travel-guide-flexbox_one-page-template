@@ -63,6 +63,11 @@ section p {
   text-align: center;
 }
 
+section:not(.hero):nth-child(even) {
+  color: #fff;
+  background-color: #2e3138;
+}
+
 hr {
   width: 150px;
   height: 2px;
@@ -194,5 +199,35 @@ hr {
 
   .places .grid li.image-lg {
     flex-basis: 70%;
+  }
+}
+
+/* ------------------------------------------- */
+/* equipment section - styles */
+/* ------------------------------------------- */
+.equipment .grid li {
+  flex-basis: 100%;
+  padding: 20px;
+  text-align: center;
+}
+
+.equipment .equipment__item h4 {
+  margin: 15px 0 25px;
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.equipment .equipment__item p {
+  padding: 0;
+}
+
+.equipment .equipment__item i {
+  color: #fff;
+}
+
+@media (min-width: 800px) {
+  .equipment .grid li {
+    flex-basis: 33.33%;
+    padding: 40px;
   }
 }
