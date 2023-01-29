@@ -15,6 +15,11 @@ body {
   font-weight: 400;
 }
 
+ul,
+nav {
+  list-style: none;
+}
+
 a {
   color: #fff;
   text-decoration: none;
@@ -39,12 +44,43 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 80px;
+  padding: 50px 20px;
 }
 
-@media (max-width: 800px) {
+section .title {
+  margin-bottom: 20px;
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+section p {
+  max-width: 775px;
+  margin-bottom: 30px;
+  padding: 0 20px;
+  line-height: 2;
+  text-align: center;
+}
+
+hr {
+  width: 150px;
+  height: 2px;
+  margin-bottom: 20px;
+  background-color: #f19f4d;
+  border: 0;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+@media (min-width: 800px) {
   section {
-    padding: 50px 20px;
+    padding: 80px;
   }
 }
 
@@ -55,7 +91,7 @@ section {
   position: relative;
   display: flex;
   justify-content: center;
-  min-height: 100vh;
+  min-height: 600px;
   color: #fff;
   text-align: center;
 }
@@ -80,37 +116,38 @@ section {
 
 .hero__title {
   margin-bottom: 15px;
-  font-size: 60px;
+  font-size: 48px;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
 }
 
 .hero__subtitle {
-  margin-bottom: 30px;
-  font-size: 28px;
+  max-width: 230px;
+  margin: 0 auto 30px;
+  font-size: 24px;
   font-weight: 400;
 }
 
 .hero__contact-btn {
-  padding: 20px 45px;
+  padding: 15px 40px;
 }
 
-@media (max-width: 800px) {
+@media (min-width: 800px) {
   .hero {
-    min-height: 600px;
+    min-height: 100vh;
   }
 
   .hero__title {
-    font-size: 48px;
+    font-size: 60px;
   }
 
   .hero__subtitle {
-    max-width: 230px;
-    font-size: 24px;
+    max-width: 100%;
+    font-size: 28px;
   }
 
   .hero__contact-btn {
-    padding: 15px 40px;
+    padding: 20px 45px;
   }
 }
 
@@ -118,5 +155,44 @@ section {
   100% {
     margin: 0;
     opacity: 1;
+  }
+}
+
+/* ------------------------------------------- */
+/* places section - styles */
+/* ------------------------------------------- */
+.places .grid li {
+  height: 350px;
+  padding: 20px;
+  background-clip: content-box;
+  background-size: cover;
+  background-position: center;
+}
+
+.places .grid li.image-sm,
+.places .grid li.image-md,
+.places .grid li.image-lg {
+  flex-basis: 100%;
+}
+
+@media (min-width: 800px) {
+  .places .grid li.image-sm,
+  .places .grid li.image-md,
+  .places .grid li.image-lg {
+    flex-basis: 50%;
+  }
+}
+
+@media (min-width: 1100px) {
+  .places .grid li.image-sm {
+    flex-basis: 30%;
+  }
+
+  .places .grid li.image-md {
+    flex-basis: 33.33%;
+  }
+
+  .places .grid li.image-lg {
+    flex-basis: 70%;
   }
 }
