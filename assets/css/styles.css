@@ -231,3 +231,24 @@ hr {
     padding: 40px;
   }
 }
+
+/* ------------------------------------------- */
+/* testimonials section - styles */
+/* ------------------------------------------- */
+.testimonials .quote {
+  margin: 15px 0;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+.testimonials .author {
+  color: #f19f4d;
+}
+
+@media (min-width: 800px) {
+  .testimonials .quote {
+    margin: 20px 0 15px;
+    font-size: 22px;
+  }
+}
