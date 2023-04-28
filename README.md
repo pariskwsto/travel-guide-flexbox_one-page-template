@@ -2,6 +2,9 @@
 
 > A travel guide one-page responsive template implemented with flexbox
 
+- Live Demo: [https://github.pariskwsto.com/travel-guide-flexbox_one-page-template/](https://github.pariskwsto.com/travel-guide-flexbox_one-page-template/)
+- GitHub Pages: [https://pariskwsto.github.io/travel-guide-flexbox_one-page-template/](https://pariskwsto.github.io/travel-guide-flexbox_one-page-template/)
+
 ![travel-guide-flexbox_one-page-template-ss-1](https://user-images.githubusercontent.com/22442894/216463783-1ff07eb7-a557-48d4-aef6-4eed50378b9d.png)
 
 ## Contents
@@ -9,7 +12,6 @@
 - [Features](#features)
 - [Getting Started](#getting-started)
 - [Technologies Used](#technologies-used)
-- [Preview](#preview)
 - [Credits](#credits)
 - [License](#license)
 - [Support](#support)
@@ -30,10 +32,6 @@
 - HTML5
 - CSS3
 - Flexbox
-
-## Preview
-
-Check out a live preview of the template [here](https://pariskwsto.github.io/travel-guide-flexbox_one-page-template/).
 
 ## Credits
 
