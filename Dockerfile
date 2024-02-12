@@ -1,6 +1,8 @@
 FROM nginx:stable-alpine
 
-COPY index.html /usr/share/nginx/html
-COPY assets /usr/share/nginx/html/assets
+WORKDIR /usr/share/nginx/html
+
+COPY ./index.html ./
+COPY ./assets ./assets
 
 EXPOSE 80
